@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Clothing Blog</title>
+    <link rel="stylesheet" href="styling/styles.css">
+    <link rel="stylesheet" href="styling/style-categories.css">
+</head>
+<body>
+    <header>
+        <h1>Children's Clothing Blog</h1>
+        <nav>
+            <div class="menu-toggle">&#9776;</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="category-list">
+        <h2 class="centered">Featured Categories</h2>
+        <div class="category">
+            <img src="https://picsum.photos/200/300" alt="Category Image">
+            <h3>Summer Fashion</h3>
+            <p>Discover the latest summer clothing trends.</p>
+            <a href="https://picsum.photos/200/300">Explore</a>
+        </div>
+        <div class="category">
+            <img src="https://picsum.photos/200/300" alt="Category Image">
+            <h3>Back-to-School</h3>
+            <p>Get ready for the new school year with stylish outfits.</p>
+            <a href="category/back-to-school.html">Explore</a>
+        </div>
+        <!-- More category blocks can be added here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Children's Clothing Blog. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav ul");
+
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    });
+</script>
+
+</html>

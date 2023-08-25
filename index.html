@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Clothing Blog</title>
+    <link rel="stylesheet" href="styling/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Children's Clothing Blog</h1>
+        <nav>
+            <div class="menu-toggle">&#9776;</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-post">
+        <article>
+            <img src="https://picsum.photos/200/300" alt="Featured Post Image">
+            <h2>Adorable Summer Outfits for Kids</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt velit...</p>
+            <a href="#">Read more</a>
+        </article>
+    </section>
+
+    <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <article class="centered">
+            <img src="https://picsum.photos/200/300" alt="Post Image">
+            <h3>Cute and Cozy Winter Jackets</h3>
+            <p>Deskripsi</p>
+            <a href="#">Read more</a>
+        </article>
+
+        <article class="centered">
+            <img src="https://picsum.photos/200/300" alt="Post Image">
+            <h3>Cute and Cozy Winter Jackets</h3>
+            <p>Deskripsi</p>
+            <a href="#">Read more</a>
+        </article>
+
+        <article class="centered">
+            <img src="https://picsum.photos/200/300" alt="Post Image">
+            <h3>Cute and Cozy Winter Jackets</h3>
+            <p>Deskripsi</p>
+            <a href="#">Read more</a>
+        </article>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Children's Clothing Blog. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav ul");
+
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    });
+</script>
+
+</html>

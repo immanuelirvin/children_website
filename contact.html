@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Clothing Blog</title>
+    <link rel="stylesheet" href="styling/styles.css">
+    <link rel="stylesheet" href="styling/style-contact.css">
+</head>
+<body>
+    <header>
+        <h1>Children's Clothing Blog</h1>
+        <nav>
+            <div class="menu-toggle">&#9776;</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-content">
+        <section class="contact-details">
+            <h2>Contact Information</h2>
+            <div class="contact-branding">
+                <a href="https://www.instagram.com/irvin_i_vn/" target="_blank">
+                    <img src="https://picsum.photos/200/300" alt="Contact Branding">
+                </a>
+                <p>We're here to assist you. Follow us on Instagram!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Children's Clothing Blog. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav ul");
+
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    });
+</script>
+
+</html>
